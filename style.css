@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Kablammo", cursive;
+  text-transform: uppercase;
+}
+.universal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+:root {
+  --bg-color: #f1c40f;
+  --text-color: #ffffff;
+}
+header {
+  background: var(--bg-color);
+}
+nav {
+  height: 15vh;
+  padding: 0px 25px;
+  color: white;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 44vw;
+}
+#logo {
+  font-size: 40px;
+  font-weight: 500;
+}
+ul li {
+  font-size: 30px;
+  font-weight: 500;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  margin: 20px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.happening_container {
+  justify-content: space-around;
+  height: 40vh;
+  width: 95vw;
+  /* background-color: aqua; */
+}
+.repeat {
+  height: 15vh;
+  width: 35vw;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 45px;
+  padding: 0px 20px;
+  color: var(--bg-color);
+}
+.opearor_style {
+  font-size: 100px;
+  font-weight: 800;
+  color: #f1c40f;
+}
+button {
+  width: 15vw;
+  height: 10vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+.firsttext, .secondtext{
+    position: relative;
+}
+.changes1{
+    font-size: 60px;
+    font-weight:bolder;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+.changes1 h5{
+    height: 40px;
+    width: 30px;
+    background-color: white;
+}
+.changes1 h5:hover{
+    background-color: #CCD1D1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+li:hover{
+    cursor: pointer;
+}
+.answer{
+    font-size: 40px;
+    font-weight: 500;
+    color: #616A6B;
+}
+@media screen and (max-width: 420px) {
+    #justchange{
+        display: block;
+        position: absolute;
+        width: 15vw;
+        right: 23px;
+        top: 25px;
+    }
+    .universal{
+        display: grid;
+    }
+    nav{
+        height: 45vh;
+    }
+    ul{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: unset;
+    }
+    .opearor_style{
+        margin-left: 65px;
+    }
+    .happening_container{
+        height: 52vh;
+    }
+    button{
+        margin-top: 10px;
+        width: 60vw;
+    }
+
+}
